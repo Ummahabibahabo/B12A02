@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(245, 248, 255);
+}
+.container {
+  margin: auto;
+  max-width: 1400px;
+}
+/* nav-section-style */
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.nav-style {
+  display: flex;
+  gap: 50px;
+}
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+.nav-home {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(37, 36, 50);
+}
+.nav-shop-us {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(137, 135, 161);
+}
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-cart {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+/* banner-section-style */
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  max-width: 50%;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 65px;
+  color: rgb(0, 0, 0);
+}
+.banner-orange {
+  color: rgb(233, 90, 8);
+}
+.banner-sub-title {
+  font-weight: 400;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+/ .banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ......Responsive....... */
+@media screen and (max-width: 768px) {
+  /* .......navbar section....... */
+  .navbar-section {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 16px 30px 16px;
+  }
+  .nav-links {
+    display: none;
+  }
+  /* ?banner-section */
+  .banner-section {
+    flex-direction: column;
+  }
+  .banner-image {
+    max-width: 100%;
+    order: -1;
+  }
+  .banner-content {
+    max-width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+  }
+  .banner-title {
+    font-size: 34px;
+    padding: 30px 16px;
+  }
+}
