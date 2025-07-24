@@ -6,7 +6,8 @@
 }
 .container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1200px;
+  padding: 0px 20px;
 }
 /* nav-section-style */
 
@@ -55,16 +56,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 .banner-content {
-  max-width: 50%;
+  max-width: 100%;
+  flex: 1;
+  text-align: left;
 }
 .banner-title {
   font-weight: 700;
   font-size: 65px;
   color: rgb(0, 0, 0);
 }
-.banner-orange {
+.orange {
   color: rgb(233, 90, 8);
 }
 .banner-sub-title {
@@ -73,9 +77,61 @@
   color: rgba(0, 0, 0, 0.5);
   margin-top: 10px;
 }
-/ .banner-image img {
+.banner-image {
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.banner-image img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+/* Product-style-section */
+.product-section {
+  text-align: center;
+  margin-top: 50px;
+}
+.product-section-content {
+  padding: 20px 20px;
+}
+
+.product-section h3 {
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.product-section p {
+  font-weight: 400;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.product-title {
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+}
+.product-sub-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: black;
+}
+.product-btn {
+  padding: 20px 50px;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  border: none;
+  width: 100%;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.product-image {
+  width: 100%;
 }
 
 /* ......Responsive....... */
@@ -97,13 +153,16 @@
     max-width: 100%;
     order: -1;
   }
+
   .banner-content {
     max-width: 100%;
-    text-align: left;
     padding: 15px 20px;
   }
   .banner-title {
     font-size: 34px;
-    padding: 30px 16px;
+    padding: 26px 50px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
