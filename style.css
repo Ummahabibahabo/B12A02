@@ -214,7 +214,7 @@
 
 .deals-grid {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .left-deals {
@@ -368,6 +368,9 @@
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .product-btn {
+    padding: 10px 30px;
+  }
   /* flowers&plants-style */
   .flowers-plants-section {
     flex-direction: column;
@@ -394,6 +397,9 @@
   .footer-content {
     display: block;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+  .footer-column {
+    margin-bottom: 20px;
   }
 }
